@@ -18,7 +18,9 @@ body{
 .container{
 margin-right: auto;
 margin-left: auto;
-width: 1200px;
+width: 1230px;
+padding-left: 15px;
+padding-right: 15px;
 outline: 2px solid tomato;
 }
 
@@ -45,7 +47,7 @@ li {
 }
 
 .page-header{
-    border-bottom: #ECECEC;
+    border-bottom:#ECECEC;
 }
 .site-nav .link{
     color: var(--title-text-color);
@@ -66,6 +68,10 @@ li {
 .site-nav .link.current{
     color: var(--accent-color);
 }
+.list{
+    padding: 0;
+    margin: 0;
+}
 
 .auth-nav .tel{
     color: var(--primary-text-color);
@@ -74,8 +80,6 @@ li {
     font-size: 14px;
      line-height: 1.14; 
      text-decoration: none; 
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 .auth-nav .mail{
     color: var(--primary-text-color);
@@ -84,9 +88,6 @@ li {
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    
 }
 .auth-nav .tel:hover,
 .auth-nav .tel:focus{
@@ -97,16 +98,10 @@ li {
 .auth-nav .mail:focus {
     color: var(--accent-color);
 }
+
 /* Hero */
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.section-title.centered,
-.feature-title.centered,
-.comands-title.centered{
-   text-align: center;
-}
+
+
 .hero{
     background-color: #2F303A;
     text-align: center;
@@ -140,33 +135,6 @@ li {
     background-color: var(--accent-color);
     cursor: pointer;
 }
-/* Portfolio */
-
- .filter {
-    color: var(--title-text-color);
-    background-color: #F5F4FA;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.filter:hover,
-.filter:focus{
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-        cursor: pointer;
-}
-
- .filterbut{
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-     line-height: 1.6;
-}
-
 
 .examples-title .examples{
     color: var(--title-text-color);
@@ -190,6 +158,16 @@ li {
 }
  
 /* Section */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-title.centered,
+.feature-title.centered,
+.comands-title.centered {
+    text-align: center;
+}
 
 .section-title{
     color: var(--title-text-color);
@@ -197,7 +175,7 @@ li {
     font-size: 14px; 
     line-height: 1.14;
     margin-top: 0;
-    margin-bottom: 94px;
+    margin-bottom:0;
 }
 
 .section .title{
@@ -214,14 +192,16 @@ li {
     margin-bottom: 0;
 }
 /* Feature */
-
+.feature{
+    padding-bottom: 94px;
+}
 .feature .feature-title{
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     margin-top: 0;
-    margin-bottom: 92px;
+    margin-bottom: 50px;
 }
 /* Comands */
 
@@ -236,6 +216,9 @@ li {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top: 94px;
 }
 
 .comands .title{
@@ -243,6 +226,10 @@ li {
     font-weight: 500;
     font-size: 16px;
   line-height: 1.187;
+}
+
+.comands p{
+    padding-bottom: 94px;;
 }
 /* Footer */
 
@@ -275,3 +262,53 @@ li {
  .page-footer .end-title:focus{
     color: var(--accent-color);
 }
+
+.page-footer .fot{
+ border-bottom: #2F303A;       
+}
+/* Portfolio */
+
+.filter {
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.filter:hover,
+.filter:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.filterbut {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.test-container {
+    margin-left: auto;
+    margin-bottom: auto;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: teal;
+}
+
+.flex-element {
+    width: 380px;
+   background-color: tomato;
+   margin-right: 30px;
+} 
