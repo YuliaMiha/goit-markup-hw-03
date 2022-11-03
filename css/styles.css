@@ -3,6 +3,7 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
+    --primary-grey-color:#F5F4FA;
 }
 
 body{
@@ -165,17 +166,19 @@ li {
 .hero{
     background-color: #2F303A;
     text-align: center;
+    padding: 200px 0;
 }
 
-.hero-title{
-    margin-top: 0;
-    margin-bottom: 30px;
+.hero-title{ 
+    max-width: 696px;
+    margin: 0 auto 30px;
+    text-align: center;
     color: var(--primary-white-color);
     font-weight: 900;
     letter-spacing: .06em;
     font-size: 44px;
-    line-height: 1.36; 
-    align: center;  
+    line-height: 1.36;   
+    text-transform: uppercase;
 }
 .button{
     color: var(--title-text-color);
@@ -184,9 +187,15 @@ li {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.86; 
-    align: center; 
+    text-align: center; 
     vertical-align: center;
-    letter-spacing: .06em;;
+    letter-spacing: .06em;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     border: none;
+     border-radius: 4px;
+    padding: 10px 32px;
+    margin: 0 auto;
 }
 
 .button:hover,
@@ -219,8 +228,8 @@ li {
  
 /* Section */
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
+
 }
 
 .section-title.centered,
@@ -294,50 +303,64 @@ li {
 
 
 /* Comands */
-
-.comands {
-    color: var(--primary-text-color);
-    font-size: 16px;
-    line-height: 1.187;
+/* фон */
+.our-team {
+    background-color: var(--primary-grey-color);
 }
 
+/* заголовок великий */
 .comands .comands-title{
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    margin-top: 0px;
     margin-bottom: 50px;
-    padding-top: 94px;
 }
 
+.comands .container{
+    padding: 94px 0;
+}
+/* им'я та прізвище */
 .comands .title{
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
-  line-height: 1.187;
+    line-height: 1.187;
+    text-align: center;
+}
+/* текст */
+.comanwor p{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 
-.comands p{
-    padding-bottom: 94px;;
-}
 
-.work-list{
+.work-list {
     display: flex;
-    margin: 0 auto;
-    padding: 0 15px;
-    
+    column-gap: 30px;
+    justify-content: center;
 }
 
-.work-list .comanwor{
-    margin-right: 30px;
-}
 
-.work-list .comanwor:last-child{
+/* .work-list .comanwor:last-child{
     margin-right: 0;
+} */
+
+.comanwor{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+     0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
+.team-content {
+    padding: 30px 0;
+}
 
+.team-content .title{
+     margin-bottom: 10px;
+}
 /* Footer */
 
 .page-footer{
